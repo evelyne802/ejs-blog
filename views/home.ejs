@@ -1,0 +1,34 @@
+<%- include("partials/header.ejs") %>
+
+<% if(locals.posts.length > 0) { %>
+    <h1>Your Posts</h1>
+    <div class="container posts">
+        <% for(let post of posts){ %>
+            <div class="post-container">
+                <div class="post-actions">
+                    <form action="/deletePost/<%= post.id %>" method="POST">
+                        <button class="no-btn"><img src="/images/trash.png"></button>
+                    </form>
+                    <form action="/editPost/<%= post.id %>" method="POST">
+                        <button class="no-btn"><img src="/images/edit.png"></button>
+                    </form>
+                    <label class="post-title"><%= post.title %></label>
+                </div>
+                <div class="post-content">
+                    <%= post.text %>
+                </div>
+            </div>
+        <% } %>
+    </div>
+    <a class="button" href="/create">Create a new post</a>
+<% } else { %>
+    <h1>Welcome to the best blog ever!</h1>
+    <p>
+        Here you can share all your thoughts and ideas, <br>
+        once you start writing, your posts will show up right here
+    </p>
+    <a class="button" href="/create">Create your first post!</a>
+
+<% } %>
+
+<%- include("partials/footer.ejs") %>
