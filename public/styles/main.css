@@ -139,11 +139,30 @@ footer {
   .title-textbox, .content-textbox {
     width: 400px;
   }
+
+  h1 {
+    font-size: 2.8rem;
+    margin: 20px;
+  }
+  
+  p {
+    font-size: 1.3rem;
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .title-textbox, .content-textbox {
     width: 300px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 20px;
+  }
+  
+  p {
+    font-size: 1.1rem;
   }
 }
 
@@ -151,4 +170,10 @@ footer {
   .title-textbox, .content-textbox {
     width: 250px;
   }
+
+  h1 {
+    font-size: 1.8rem;
+    padding: 10px;
+  }
+
 }
