@@ -157,9 +157,9 @@ footer {
   }
 
   h1 {
-    font-size: 2rem;
-    margin: 20px;
-  }
+    font-size: 2.4rem;
+    padding: 10px;
+}
   
   p {
     font-size: 1.1rem;
@@ -170,10 +170,4 @@ footer {
   .title-textbox, .content-textbox {
     width: 250px;
   }
-
-  h1 {
-    font-size: 1.8rem;
-    padding: 10px;
-  }
-
 }
